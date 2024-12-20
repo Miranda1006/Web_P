@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Notícia</title>
+</head>
+<body>
+    <header>
+        <h1>Desenvolvimento Web - Inovações</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="listagem.html">Listagem</a></li>
+                <li><a href="cadastro.html">Cadastrar Notícia</a></li>
+                <li><a href="https://www.tecmundo.com.br/desenvolvimento/noticias" target="_blank">Link Externo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Cadastro de Notícia</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="categoria">Categoria:</label>
+                <select name="categoria" id="categoria">
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                </select>
+            </div>
+            <div>
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" required>
+            </div>
+            <div>
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div>
+                <label for="texto">Texto:</label>
+                <textarea id="texto" name="texto" rows="4" required></textarea>
+            </div>
+            <div>
+                <label for="foto">Foto:</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </div>
+            <div>
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Desenvolvido por G.Miranda </p>
+    </footer>
+</body>
+</html>
