@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes - Vaso de Tulipas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Detalhes do Objeto</h1>
+        <button class="nav-toggle">☰</button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="admin-login.html">Área Administrativa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Vaso de Tulipas</h2>
+            <img src="images/tulip-vaso.jpg" alt="Vaso de Tulipas">
+            <p>Este vaso contém uma linda coleção de tulipas, com cores vibrantes e design minimalista, perfeito para decoração de ambientes modernos e sustentáveis.</p>
+            <h3>Informações Adicionais</h3>
+            <ul>
+                <li><strong>Material:</strong> Cerâmica</li>
+                <li><strong>Dimensões:</strong> 30cm de altura</li>
+                <li><strong>Cores:</strong> Vermelho, Branco, Amarelo</li>
+                <li><strong>Preço:</strong> R$ 120,00</li>
+            </ul>
+            <a href="index.html">Voltar à Página Inicial</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Flower Go - Todos os direitos reservados.</p>
+        <a href="sobre.html">Sobre o Autor</a>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
