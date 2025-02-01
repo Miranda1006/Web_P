@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Go - Página Inicial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Flower Go</h1>
+        <button class="nav-toggle">☰</button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="admin-login.html">Área Administrativa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre o Projeto</h2>
+            <p>Este é um projeto dedicado à sustentabilidade e ao design de interiores com plantas e flores. Explore e saiba mais sobre nossos objetos temáticos.</p>
+        </section>
+
+        <section>
+            <h2>Objetos Destaques</h2>
+            <div class="objects">
+                <div class="object">
+                    <img src="images/tulip-vaso.jpg" alt="Vaso de Tulipas">
+                    <h3>Vaso de Tulipas</h3>
+                    <p>Linda coleção de tulipas em vaso minimalista.</p>
+                    <a href="detalhes.html">Veja mais</a>
+                </div>
+
+                <div class="object">
+                    <img src="images/rosa-vaso.jpg" alt="Vaso de Rosas">
+                    <h3>Vaso de Rosas</h3>
+                    <p>Um vaso decorativo com rosas vermelhas vibrantes.</p>
+                    <a href="detalhes.html">Veja mais</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Flower Go - Todos os direitos reservados.</p>
+        <a href="sobre.html">Sobre o Autor</a>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
