@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Go</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <h1>Flower Go</h1>
+        <img src="logo.png" alt="Logo da Flower Go">
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="detalhes.html">Detalhes</a></li>
+                <li><a href="sobre.html">Sobre o Autor</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <main>
+        <section>
+            <h2>Nossa Coleção</h2>
+            <article>
+                <h3>Vaso de Tulipas Minimalista</h3>
+                <img src="tulipas.jpg" alt="Vaso de tulipas">
+                <p>Delicado vaso de tulipas, ideal para ambientes modernos.</p>
+            </article>
+            <article>
+                <h3>Buquê de Rosas Vermelhas</h3>
+                <img src="rosas.jpg" alt="Buquê de rosas vermelhas">
+                <p>Um clássico de elegância e paixão.</p>
+            </article>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Autor: Seu Nome</p>
+        <a href="sobre.html">Sobre o Autor</a>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes - Flower Go</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Flower Go</h1>
+        <img src="logo.png" alt="Logo da Flower Go">
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="detalhes.html">Detalhes</a></li>
+                <li><a href="sobre.html">Sobre o Autor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Detalhes do Produto</h2>
+            <h3>Vaso de Tulipas Minimalista</h3>
+            <img src="tulipas.jpg" alt="Vaso de tulipas">
+            <p>Um vaso elegante com tulipas frescas, perfeito para decoração de interiores.</p>
+            <ul>
+                <li>Material: Cerâmica</li>
+                <li>Cor: Branco</li>
+                <li>Preço: R$ 80,00</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Autor: Seu Nome</p>
+        <a href="sobre.html">Sobre o Autor</a>
+    </footer>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Autor - Flower Go</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Flower Go</h1>
+        <img src="logo.png" alt="Logo da Flower Go">
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="detalhes.html">Detalhes</a></li>
+                <li><a href="sobre.html">Sobre o Autor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre o Autor</h2>
+            <p>Olá, sou o criador da Flower Go, uma loja dedicada a oferecer flores e arranjos que encantam. Meu objetivo é trazer um toque de beleza e alegria ao seu dia.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Autor: Seu Nome</p>
+        <a href="sobre.html">Sobre o Autor</a>
+    </footer>
+</body>
+</html>
+
+
+body {
+    background-color: #ffffff;
+    font-family: 'Lora', serif;
+    color: #2f4f4f;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d8f3dc;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #95d5b2;
+}
+
+header h1 {
+    margin: 0;
+    color: #1b4332;
+}
+
+header img {
+    max-width: 100px;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2f4f4f;
+    padding: 8px 12px;
+    border: 1px solid #95d5b2;
+    border-radius: 5px;
+    background-color: #d8f3dc;
+}
+
+nav ul li a:hover {
+    background-color: #95d5b2;
+    color: #ffffff;
+}
+
+main {
+    padding: 20px;
+}
+
+section h2 {
+    color: #1b4332;
+}
+
+article {
+    border: 1px solid #95d5b2;
+    border-radius: 8px;
+    background-color: #d8f3dc;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #d8f3dc;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #95d5b2;
+}
