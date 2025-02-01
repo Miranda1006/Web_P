@@ -1,0 +1,330 @@
+styles.css - layout horizontal mobile-first)
+
+:root {
+    --cor-primaria: #FFE4E1; /
+    --cor-secundaria: #E6E6FA;
+    --cor-destaque: #FFDAB9;
+    --cor-texto: #6B4E71; 
+    --cor-titulo: #D8A7B1; 
+    --cor-fundo: #FFF5F0;
+    --fonte-principal: 'Lora', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-titulo);
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid var(--cor-destaque);
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-titulo);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--cor-destaque);
+}
+
+main {
+    padding: 20px;
+}
+
+.collection {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+footer {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-titulo);
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid var(--cor-destaque);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+/* Para telas maiores */
+@media (min-width: 768px) {
+    .collection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+ styles2.css-layout  vertical 
+
+:root {
+    --cor-primaria: #FFE4E1; 
+    --cor-secundaria: #E6E6FA; 
+    --cor-destaque: #FFDAB9; 
+    --cor-texto: #6B4E71;
+    --cor-titulo: #D8A7B1; 
+    --cor-fundo: #FFF5F0; 
+    --fonte-principal: 'Lora', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-titulo);
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid var(--cor-destaque);
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+nav {
+    background-color: var(--cor-secundaria);
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 20px 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: block;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-titulo);
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--cor-destaque);
+}
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+footer {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-titulo);
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid var(--cor-destaque);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+
+
+
+
+HTML
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Área de Administração</h1>
+        <button class="nav-toggle">☰</button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="admin-login.html">Login</a></li>
+                <li><a href="admin-cadastro-objetos.html">Cadastro de Objetos</a></li>
+                <li><a href="admin-cadastro-usuarios.html">Cadastro de Usuários</a></li>
+ <li><a href="index.html">Home</a></li>
+        <li><a href="styles2.cssl">Home (Layout 2)</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+
+                <li><a href="index.html">Voltar ao Site</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Login</h2>
+            <form action="#" method="POST">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Autor: Seu Nome</p>
+        <a href="sobre.html">Sobre o Autor</a>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Go - Admin - Cadastro de Objetos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Área de Administração</h1>
+        <button class="nav-toggle">☰</button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="admin-login.html">Login</a></li>
+                <li><a href="admin-cadastro-objetos.html">Cadastro de Objetos</a></li>
+                <li><a href="admin-cadastro-usuarios.html">Cadastro de Usuários</a></li>
+ <li><a href="index.html">Home</a></li>
+        <li><a href="styles2.cssl">Home (Layout 2)</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+
+                <li><a href="index.html">Voltar ao Site</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Cadastro de Objetos</h2>
+        <form action="#" method="POST">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" required></textarea>
+
+            <label for="imagem">Imagem:</label>
+            <input type="file" id="imagem" name="imagem" accept="image/*" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+        
+        <h3>Lista de Objetos Cadastrados</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Descrição</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Vaso de Tulipas</td>
+                    <td>Linda coleção de tulipas em vaso minimalista.</td>
+                    <td>
+                        <button>Editar</button>
+                        <button>Apagar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Flower Go</p>
+        <a href="sobre.html">Sobre o Autor</a>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
