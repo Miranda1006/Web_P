@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Cadastro de Objetos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Área de Administração</h1>
+        <nav>
+            <ul>
+                <li><a href="admin-login.html">Login</a></li>
+                <li><a href="admin-cadastro-objetos.html">Cadastro de Objetos</a></li>
+                <li><a href="admin-cadastro-usuarios.html">Cadastro de Usuários</a></li>
+                <li><a href="index.html">Voltar ao Site</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cadastro de Objetos</h2>
+            <form action="#" method="POST">
+                <label for="nome">Nome do Objeto:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" required></textarea>
+
+                <label for="preco">Preço:</label>
+                <input type="number" id="preco" name="preco" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Objetos Cadastrados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Exemplo</td>
+                        <td>Descrição do Exemplo</td>
+                        <td>R$ 50,00</td>
+                        <td>
+                            <button>Editar</button>
+                            <button>Apagar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Autor: Seu Nome</p>
+        <a href="sobre.html">Sobre o Autor</a>
+    </footer>
+</body>
+</html>
