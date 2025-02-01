@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Autor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sobre o Autor</h1>
+        <button class="nav-toggle">☰</button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="admin-login.html">Área Administrativa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Quem Sou Eu</h2>
+            <p>Sou [Seu Nome], um entusiasta de design sustentável e arquitetura verde. Este projeto nasceu da minha paixão por plantas e pela importância de criar espaços que respeitem a natureza.</p>
+        </section>
+
+        <section>
+            <h2>Objetivos do Projeto</h2>
+            <p>O objetivo do Flower Go é trazer uma coleção de objetos temáticos que unam a beleza das plantas com o design sustentável, oferecendo opções de decoração que ajudem a preservar o meio ambiente.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Flower Go</p>
+    </footer>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
